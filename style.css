@@ -1,107 +1,87 @@
-
 body {
-  margin: 0;
   font-family: 'Urbanist', sans-serif;
-  background-color: #0a0f1c;
-  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  background-color: #0f172a;
+  color: white;
+  scroll-behavior: smooth;
 }
 
 header {
-  background-color: #0a0f1c;
-  padding: 20px 40px;
+  background: #1e293b;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .logo {
-  font-size: 1.8rem;
-  font-weight: 800;
-  color: #66ccff;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 nav a {
-  margin-left: 25px;
-  color: #ffffff;
+  margin: 0 10px;
+  color: white;
   text-decoration: none;
   font-weight: 600;
 }
 
 .hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   padding: 60px 20px;
-  background-color: #111a2f;
 }
 
-.hero-content {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-
-.hero-content img {
-  width: 220px;
-  height: auto;
+.hero img {
+  width: 120px;
+  margin-bottom: 20px;
 }
 
 .hero-text h1 {
-  font-size: 2.8rem;
-  margin-bottom: 10px;
-  color: #ffffff;
+  font-size: 2rem;
 }
 
 .hero-text p {
   font-size: 1.2rem;
   margin-bottom: 20px;
-  color: #cccccc;
 }
 
 .cta {
-  padding: 12px 24px;
-  background-color: #66ccff;
-  color: #0a0f1c;
-  font-weight: 600;
-  border-radius: 6px;
+  padding: 10px 20px;
+  background-color: #38bdf8;
+  color: black;
   text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
 .features {
   display: flex;
-  justify-content: center;
-  gap: 24px;
-  padding: 40px 5%;
   flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 10px;
 }
 
 .feature {
-  width: 210px;
-  height: 210px;
-  background-color: #131c2b;
-  border-radius: 14px;
-  box-shadow: 0 0 12px #66ccff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  transition: transform 0.3s, box-shadow 0.3s;
+  margin: 10px;
+  display: block;
 }
 
 .feature img {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
 }
 
-.feature:hover {
+.feature img:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px #66ccff;
 }
 
 footer {
+  background: #1e293b;
   text-align: center;
-  padding: 40px 0;
+  padding: 20px;
   font-size: 0.9rem;
-  color: #888888;
 }
