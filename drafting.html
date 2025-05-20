@@ -1,50 +1,73 @@
-<script>
-  if (localStorage.getItem("paidUser") !== "true") {
-    window.location.href = "login.html"; // or "checkout.html"
-  }
-</script>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Drafting</title>
+  <title>Smart Legal Drafting Assistant</title>
   <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     body {
-      margin: 0;
-      padding: 0;
       font-family: 'Urbanist', sans-serif;
-      background-color: #0a0f1c;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
+      background: #f4f7fa;
+      padding: 40px;
     }
-    h1 {
-      font-size: 3rem;
-      color: #66ccff;
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
-    p {
-      font-size: 1.2rem;
-      color: #cccccc;
+    textarea {
+      width: 100%;
+      height: 120px;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 16px;
     }
-    a {
-      margin-top: 30px;
-      padding: 10px 20px;
-      background: #66ccff;
-      color: #0a0f1c;
-      font-weight: bold;
+    button {
+      background: #0047ab;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .output {
+      margin-top: 20px;
+      padding: 20px;
+      border: 1px solid #eee;
+      background: #f9f9f9;
+      min-height: 100px;
+      border-radius: 6px;
+    }
+    .nav-link {
+      display: inline-block;
+      margin-top: 20px;
+      color: #0047ab;
       text-decoration: none;
-      border-radius: 8px;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-  <h1>Drafting</h1>
-  <p>This feature is coming soon.</p>
-  <a href="index.html">Back to Home</a>
+  <div class="container">
+    <h2>Smart Legal Drafting Assistant</h2>
+    <textarea id="input" placeholder="Enter your prompt or legal question here..."></textarea>
+    <button onclick="runTool()">Run AI</button>
+    <div class="output" id="output">AI response will appear here...</div>
+    <a class="nav-link" href="index.html">← Back to Home</a>
+  </div>
+
+  <script>
+    function runTool() {
+      const input = document.getElementById('input').value;
+      const output = document.getElementById('output');
+      output.innerText = "Processing your request for: " + input;
+      // Future: Replace this with real AI API call
+    }
+  </script>
 </body>
 </html>
