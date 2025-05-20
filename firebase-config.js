@@ -1,18 +1,23 @@
+<script type="module">
+  import { auth } from './firebase-config.js';
+  import { signInWithEmailAndPassword, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-auth.js";
 
-// firebase-config.js
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
-import { getAuth } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js";
+  const login = () => {
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    signInWithEmailAndPassword(auth, email, password)
+      .then(() => window.location.href = "index.html")
+      .catch(error => document.getElementById("error").textContent = error.message);
+  };
 
-const firebaseConfig = {
-  apiKey: "AIzaSyBDVzD-5KXRtsuo0vL9AxdWldS_KGHxE",
-  authDomain: "ai-law-solutions-c5c10.firebaseapp.com",
-  projectId: "ai-law-solutions-c5c10",
-  storageBucket: "ai-law-solutions-c5c10.appspot.com",
-  messagingSenderId: "466042562937",
-  appId: "1:466042562937:web:f6892db46226e76450a7a8",
-  measurementId: "G-J1R02JCJHJ"
-};
+  const signup = () => {
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    createUserWithEmailAndPassword(auth, email, password)
+      .then(() => window.location.href = "index.html")
+      .catch(error => document.getElementById("error").textContent = error.message);
+  };
 
-const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
-export { auth };
+  window.login = login;
+  window.signup = signup;
+</script>
