@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   font-family: 'Urbanist', sans-serif;
@@ -69,14 +70,14 @@ nav a {
 .features {
   display: flex;
   justify-content: center;
-  gap: 30px;
-  padding: 60px 20px;
+  gap: 24px;
+  padding: 40px 5%;
   flex-wrap: wrap;
 }
 
 .feature {
-  width: 180px;
-  height: 180px;
+  width: 210px;
+  height: 210px;
   background-color: #131c2b;
   border-radius: 14px;
   box-shadow: 0 0 12px #66ccff;
