@@ -72,17 +72,16 @@ nav a {
 
 .features {
   display: flex;
-  justify-content: center;
-  gap: 20px;
+  justify-content: space-between;
   flex-wrap: wrap;
-  padding: 30px;
-  max-width: 1000px;
+  padding: 40px 60px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .feature {
-  flex: 0 0 18%;
-  max-width: 160px;
+  flex: 1 1 18%;
+  max-width: 200px;
   text-align: center;
 }
 
@@ -90,7 +89,7 @@ nav a {
   width: 100%;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0, 200, 255, 0.2);
+  box-shadow: 0 0 10px rgba(0, 200, 255, 0.25);
 }
 
 footer {
