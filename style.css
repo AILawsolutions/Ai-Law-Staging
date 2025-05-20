@@ -1,93 +1,76 @@
-/* Reset and base styles */
 body {
   margin: 0;
   font-family: 'Urbanist', sans-serif;
-  background-color: #0b0f1a;
+  background-color: #0a0f1c;
   color: #ffffff;
 }
 
 header {
-  background-color: #0b0f1a;
-  padding: 20px;
+  background-color: #0a0f1c;
+  padding: 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 1.8rem;
   font-weight: 800;
   color: #66ccff;
 }
 
 nav a {
+  margin-left: 25px;
   color: #ffffff;
   text-decoration: none;
-  margin-left: 20px;
   font-weight: 600;
-  transition: color 0.3s;
-}
-
-nav a:hover {
-  color: #66ccff;
 }
 
 .hero {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 60px 10%;
-  background: linear-gradient(to right, #0b0f1a, #10192a);
+  padding: 60px 20px;
+  background-color: #111a2f;
 }
 
 .hero-content {
   display: flex;
   align-items: center;
   gap: 40px;
-  flex-wrap: wrap;
 }
 
 .hero-content img {
-  max-width: 300px;
+  width: 220px;
   height: auto;
-  border-radius: 12px;
-  box-shadow: 0 0 20px #66ccff;
-}
-
-.hero-text {
-  max-width: 600px;
 }
 
 .hero-text h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  color: #ffffff;
 }
 
 .hero-text p {
-  font-size: 20px;
-  margin-bottom: 30px;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #cccccc;
 }
 
 .cta {
+  padding: 12px 24px;
   background-color: #66ccff;
-  color: #0b0f1a;
-  padding: 12px 30px;
+  color: #0a0f1c;
   font-weight: 600;
+  border-radius: 6px;
   text-decoration: none;
-  border-radius: 8px;
-  transition: background-color 0.3s;
 }
 
-.cta:hover {
-  background-color: #33bbff;
-}
-
-/* Features section */
 .features {
   display: flex;
   justify-content: center;
   gap: 30px;
-  padding: 40px 5%;
+  padding: 60px 20px;
   flex-wrap: wrap;
 }
 
@@ -96,10 +79,11 @@ nav a:hover {
   height: 180px;
   background-color: #131c2b;
   border-radius: 14px;
-  box-shadow: 0 0 10px #66ccff;
+  box-shadow: 0 0 12px #66ccff;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -114,11 +98,9 @@ nav a:hover {
   box-shadow: 0 0 20px #66ccff;
 }
 
-/* Footer */
 footer {
   text-align: center;
-  padding: 20px;
-  background-color: #0b0f1a;
-  color: #888;
-  font-size: 14px;
+  padding: 40px 0;
+  font-size: 0.9rem;
+  color: #888888;
 }
