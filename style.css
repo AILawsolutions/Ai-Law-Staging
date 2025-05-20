@@ -1,103 +1,33 @@
 
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #0f172a;
-    color: #f8fafc;
-}
-
-header {
-    background: #1e293b;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #38bdf8;
-}
-
-nav a {
-    color: #cbd5e1;
-    margin-left: 1.5rem;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 3rem 1rem;
-    background: #1e40af;
-}
-
-.hero-img {
-    width: 180px;
-    margin-bottom: 1rem;
-}
-
-.hero-text h1 {
-    font-size: 2.5rem;
-    color: #f1f5f9;
-    margin-bottom: 1rem;
-}
-
-.hero-text p {
-    font-size: 1.1rem;
-    color: #cbd5e1;
-    margin-bottom: 2rem;
-}
-
-.cta {
-    background: #38bdf8;
-    color: #0f172a;
-    padding: 0.75rem 1.5rem;
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background 0.3s ease;
-}
-
-.cta:hover {
-    background: #0ea5e9;
-}
-
-main {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 2rem;
-    padding: 2rem;
-    background: #0f172a;
-}
-
 .card {
-    background: #1e293b;
-    padding: 2rem;
-    border-radius: 12px;
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: bold;
-    box-shadow: 0 0 10px rgba(56,189,248,0.3);
-    color: #e0f2fe;
+  background: #1e293b;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  box-shadow: 0 0 15px rgba(56,189,248,0.3);
+  color: #e0f2fe;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(56,189,248,0.5);
 }
 
 .card span {
-    display: block;
-    font-size: 0.9rem;
-    font-weight: normal;
-    color: #94a3b8;
-    margin-top: 0.5rem;
+  display: block;
+  font-size: 0.95rem;
+  font-weight: normal;
+  color: #94a3b8;
+  margin-top: 0.5rem;
 }
 
 footer {
-    text-align: center;
-    padding: 1rem;
-    font-size: 0.9rem;
-    background: #1e293b;
-    color: #94a3b8;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  background: #121829;
+  color: #94a3b8;
 }
