@@ -72,24 +72,35 @@ nav a {
 
 .features {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
   flex-wrap: wrap;
-  padding: 40px 60px;
-  max-width: 1200px;
-  margin: 0 auto;
+  margin-top: 40px;
 }
 
 .feature {
-  flex: 1 1 18%;
-  max-width: 200px;
-  text-align: center;
+  width: 160px;
+  height: auto;
+  transition: transform 0.3s ease;
+  cursor: pointer; /* Makes it feel clickable */
+  z-index: 1;
+}
+
+.feature:hover {
+  transform: scale(1.05); /* Optional hover effect */
+}
+
+.feature a {
+  display: block;
+  text-decoration: none;
 }
 
 .feature img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 200, 255, 0.25);
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
 footer {
