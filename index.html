@@ -1,47 +1,130 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AI Law Solutions</title>
-  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <div class="logo">AI Law Solutions</div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Veritas</a>
-      <a href="#">CiteSure</a>
-      <a href="#">Drafting</a>
-      <a href="#">Law School</a>
-      <a href="#">Tools</a>
-    </nav>
-  </header>
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  <section class="hero">
-    <div class="hero-content">
-      <img src="7CA8C870-FE1D-448B-88BF-5DCD2E34C351.png" alt="Lady Justice">
-      <div class="hero-text">
-        <h1>Revolutionize Your Legal Work</h1>
-        <p>Meet the world’s most advanced AI legal platform.</p>
-        <a class="cta" href="#">Get Started</a>
-      </div>
-    </div>
-  </section>
+body {
+  font-family: 'Urbanist', sans-serif;
+  background-color: #0e1014;
+  color: #ffffff;
+}
 
-  <section class="features">
-    <div class="feature"><img src="05D4E7B2-E43E-477E-B89D-69027E76A683.PNG" alt="Veritas" /></div>
-    <div class="feature"><img src="6CEDC775-3889-49C1-8CE4-8282B3E7713E.PNG" alt="CiteSure" /></div>
-    <div class="feature"><img src="8C359E1F-7C45-44A8-84D9-435711198460.png" alt="Drafting" /></div>
-    <div class="feature"><img src="2F61D7FC-A04E-44F2-AA0D-56776020ED76.PNG" alt="Law School" /></div>
-    <div class="feature"><img src="tools_card_1024x1024.png" alt="Tools" /></div>
-  </section>
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111317;
+  padding: 20px;
+}
 
-  <footer>
-    <p>© 2025 AI Law Solutions. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+.logo {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Hero Section */
+.hero {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #101218;
+  border-bottom: 1px solid #1f2128;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+}
+
+.hero-content img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #cfcfcf;
+}
+
+.cta {
+  background-color: #00bfff;
+  padding: 12px 24px;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: nowrap;
+  padding: 40px 20px;
+  background-color: #0d0f14;
+  overflow-x: auto;
+}
+
+.feature {
+  flex: 1 1 18%;
+  max-width: 200px;
+  text-align: center;
+}
+
+.feature img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #0b0d12;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Mobile adjustments */
+@media (max-width: 900px) {
+  .features {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .feature {
+    flex: 1 1 40%;
+    max-width: 180px;
+    margin-bottom: 20px;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
