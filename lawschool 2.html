@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Law School</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Urbanist', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f3f6fb;
+      color: #001a33;
+    }
+    header {
+      background: #0a0f1c;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: 800;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+    .course-card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .course-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+    .module-content {
+      display: none;
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      margin-top: 30px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    }
+    .tabs {
+      display: flex;
+      margin-bottom: 20px;
+    }
+    .tab {
+      padding: 10px 20px;
+      margin-right: 10px;
+      background: #e0ebff;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .tab.active {
+      background: #0052cc;
+      color: white;
+    }
+    .tab-content {
+      display: none;
+      white-space: pre-wrap;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+    .tab-content.active {
+      display: block;
+    }
+    a.back-link {
+      display: inline-block;
+      margin-top: 30px;
+      color: #0052cc;
+      font-weight: 600;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>AI Law School</header>
+  <div class="container">
+    <div class="course-grid">
+      <div class="course-card" onclick="showModule()">Contracts</div>
+      <div class="course-card">Torts</div>
+      <div class="course-card">Criminal Law</div>
+      <div class="course-card">Constitutional Law</div>
+      <div class="course-card">Property Law</div>
+      <div class="course-card">Civil Procedure</div>
+      <div class="course-card">Evidence</div>
+      <div class="course-card">Legal Writing</div>
+      <div class="course-card">Professional Responsibility</div>
+      <div class="course-card">Administrative Law</div>
+    </div>
+    <div class="module-content" id="module">
+      <h2>Contracts – Module 1</h2>
+      <div class="tabs">
+        <div class="tab active" onclick="switchTab(0)">Lesson</div>
+        <div class="tab" onclick="switchTab(1)">Quiz</div>
+        <div class="tab" onclick="switchTab(2)">Flashcards</div>
+        <div class="tab" onclick="switchTab(3)">Case Brief</div>
+        <div class="tab" onclick="switchTab(4)">Glossary</div>
+      </div>
+      <div class="tab-content active">
+Lesson: Offer, Acceptance, and Consideration
+
+A contract is a legally enforceable agreement. To be valid, it must include:
+1. Offer – A clear proposal to make a deal.
+2. Acceptance – A clear agreement to that deal.
+3. Consideration – Something of value exchanged by both parties.
+
+Example: If Alex offers to sell a bike for $100 and Jordan agrees, a valid contract is formed.
+      </div>
+      <div class="tab-content">
+QUIZ:
+1. Which is NOT an element of a contract?
+   a) Offer
+   b) Acceptance
+   c) Consideration
+   d) Justice
+   Answer: d
+
+2. What happens if a party accepts with different terms?
+   Answer: It's a counteroffer.
+
+3. True or False: Silence is always acceptance.
+   Answer: False
+      </div>
+      <div class="tab-content">
+FLASHCARDS:
+- Q: What are the 3 elements of a contract?
+  A: Offer, Acceptance, Consideration
+
+- Q: What is a counteroffer?
+  A: A rejection of the original offer with new terms
+      </div>
+      <div class="tab-content">
+CASE BRIEF – Carlill v. Carbolic Smoke Ball Co.
+
+Facts: A woman used a smoke ball as directed but still caught flu. She sued for the £100 reward.
+
+Issue: Was the ad a binding contract?
+
+Held: Yes. The ad was a unilateral offer accepted through use.
+      </div>
+      <div class="tab-content">
+GLOSSARY:
+- Offer: A proposal to enter into a contract.
+- Acceptance: Agreement to the terms of the offer.
+- Consideration: Something of value exchanged in the contract.
+      </div>
+      <a class="back-link" href="index.html">← Back to Home</a>
+    </div>
+  </div>
+  <script>
+    function showModule() {
+      document.getElementById('module').style.display = 'block';
+    }
+    function switchTab(index) {
+      const tabs = document.querySelectorAll('.tab');
+      const contents = document.querySelectorAll('.tab-content');
+      tabs.forEach((t, i) => {
+        t.classList.toggle('active', i === index);
+        contents[i].classList.toggle('active', i === index);
+      });
+    }
+  </script>
+</body>
+</html>
