@@ -1,11 +1,34 @@
-
-<!-- success.html -->
 <!DOCTYPE html>
-<html>
-<head><title>Welcome</title></head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Success - AI Law Solutions</title>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
+  <script src="firebase-config.js"></script>
+  <style>
+    body {
+      font-family: 'Urbanist', sans-serif;
+      background-color: #0a0f1c;
+      color: #ffffff;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    h1 { color: #66ccff; }
+    a { color: #66ccff; margin-top: 20px; display: block; }
+  </style>
+</head>
 <body>
-  <h2>Welcome to AI Law Solutions</h2>
-  <p>You are now logged in.</p>
-  <a href="index.html">Go to Home</a>
+  <h1>Payment Successful</h1>
+  <p>Thank you! Unlocking your features now...</p>
+  <a href="index.html">Return to Home</a>
+  <script>
+    firebase.auth().onAuthStateChanged(user => {
+      if (user) {
+        firebase.database().ref("users/" + user.uid).set({ hasPaid: true });
+      }
+    });
+  </script>
 </body>
 </html>
