@@ -8,32 +8,31 @@
   <script src="firebase-config.js"></script>
   <style>
     body {
-      font-family: 'Urbanist', sans-serif;
       background-color: #0a0f1c;
-      color: #fff;
+      color: #ffffff;
+      font-family: 'Urbanist', sans-serif;
       text-align: center;
       padding: 60px 20px;
     }
-    input {
-      padding: 12px;
+    input, button {
       margin: 10px;
+      padding: 12px;
       border-radius: 6px;
       border: none;
-      width: 250px;
+      font-size: 1rem;
     }
+    input { width: 260px; }
     button {
-      padding: 12px 24px;
       background-color: #66ccff;
       color: #0a0f1c;
-      border: none;
-      border-radius: 6px;
-      font-weight: bold;
       cursor: pointer;
+      font-weight: bold;
     }
     a {
       color: #66ccff;
-      display: block;
       margin-top: 20px;
+      display: block;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -57,7 +56,7 @@
       const email = document.getElementById("email").value;
       const password = document.getElementById("password").value;
       firebase.auth().createUserWithEmailAndPassword(email, password)
-        .then(() => window.location.href = "pricing.html")
+        .then(() => window.location.href = "index.html")
         .catch(err => alert(err.message));
     }
   </script>
