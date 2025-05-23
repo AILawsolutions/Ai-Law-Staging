@@ -1,7 +1,0 @@
-GLOSSARY – CONTRACTS MODULE 1
-
-Offer – A proposal to form a contract.
-Acceptance – An agreement to the offer’s terms.
-Consideration – Something of value exchanged.
-Counteroffer – A response that changes the terms of the original offer.
-Unilateral Contract – A contract accepted by performing an act.
