@@ -3,11 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <title>Veritas – AI Legal Strategist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body { font-family: Arial, sans-serif; background: #e8f0ff; margin: 0; padding: 0; color: #002244; }
+    header { background: #003366; color: white; padding: 20px; text-align: center; font-size: 1.8em; }
+    .container { padding: 30px; max-width: 1000px; margin: auto; }
+    textarea, button { width: 100%; padding: 14px; font-size: 1rem; margin-top: 20px; }
+    .output { margin-top: 30px; background: #f7faff; padding: 20px; border-left: 4px solid #0052cc; font-size: 1rem; }
+  </style>
 </head>
 <body>
-  <h1>Veritas – Your AI Legal Strategist</h1>
-  <p>All 25+ tools are live and connected to GPT-4o via your API key.</p>
-  <p>This is a placeholder. Your full tool interface is integrated in the final build.</p>
+  <header>Veritas – AI Legal Strategist</header>
+  <div class="container">
+    <p>Ask a legal question or enter a case detail below. Veritas will respond using GPT-4o logic and provide a formatted legal strategy response.</p>
+    <textarea id="input" rows="6" placeholder="Enter legal scenario or upload summary..."></textarea>
+    <button onclick="runVeritas()">Run Veritas</button>
+    <div class="output" id="output">AI strategy response will appear here...</div>
+  </div>
   <script src="veritas.js"></script>
 </body>
 </html>
