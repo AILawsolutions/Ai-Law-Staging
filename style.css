@@ -1,93 +1,67 @@
-
 body {
   margin: 0;
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Arial', sans-serif;
   background-color: #0a0f1c;
   color: #ffffff;
 }
 header {
-  background-color: #0a0f1c;
-  padding: 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: #111a2f;
+  padding: 20px 40px;
 }
 .logo {
   font-size: 1.8rem;
-  font-weight: 800;
   color: #66ccff;
+  font-weight: bold;
 }
 nav a {
   margin-left: 25px;
-  color: #ffffff;
   text-decoration: none;
+  color: #ffffff;
   font-weight: 600;
 }
 .hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 60px 20px;
-  background-color: #111a2f;
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(145deg, #0a0f1c 0%, #111a2f 100%);
 }
-.hero-content {
-  display: flex;
-  align-items: center;
-  gap: 40px;
+.hero h1 {
+  font-size: 3rem;
+  color: #66ccff;
 }
-.hero-content img {
-  width: 220px;
-  height: auto;
-}
-.hero-text h1 {
-  font-size: 2.8rem;
-  margin-bottom: 10px;
-  color: #ffffff;
-}
-.hero-text p {
+.hero p {
   font-size: 1.2rem;
-  margin-bottom: 20px;
   color: #cccccc;
 }
 .cta {
-  padding: 12px 24px;
-  background-color: #66ccff;
+  margin-top: 30px;
+  display: inline-block;
+  background: #66ccff;
   color: #0a0f1c;
-  font-weight: 600;
-  border-radius: 6px;
+  padding: 12px 24px;
   text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
 }
-.features {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  padding: 40px 5%;
-  flex-wrap: wrap;
-}
-.feature {
-  width: 210px;
-  height: 210px;
-  background-color: #131c2b;
-  border-radius: 14px;
-  box-shadow: 0 0 12px #66ccff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-.feature img {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-}
-.feature:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px #66ccff;
-}
-footer {
+.veritas-ui {
+  padding: 60px 20px;
   text-align: center;
-  padding: 40px 0;
-  font-size: 0.9rem;
-  color: #888888;
+}
+.mode-switcher button {
+  margin: 10px;
+  padding: 12px 20px;
+  background: #1c2a40;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.ai-output {
+  margin-top: 40px;
+  padding: 20px;
+  background: #131c2b;
+  border-radius: 10px;
 }
