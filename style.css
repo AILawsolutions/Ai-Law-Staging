@@ -16,7 +16,7 @@ header {
 
 .logo {
   color: #00BFFF;
-  font-size: 1.8rem; /* was 1.6rem */
+  font-size: 1.8rem;
   font-weight: bold;
 }
 
@@ -24,7 +24,7 @@ nav a {
   color: white;
   text-decoration: none;
   margin-left: 25px;
-  font-size: 1.1rem; /* increased size */
+  font-size: 1.1rem;
 }
 
 nav a:hover {
@@ -32,22 +32,22 @@ nav a:hover {
 }
 
 .hero h1 {
-  font-size: 3.2rem; /* was 3rem */
+  font-size: 3.2rem;
   margin-top: 40px;
 }
 
 .hero p {
-  font-size: 1.4rem; /* was 1.2rem */
+  font-size: 1.4rem;
   margin: 20px 0;
 }
 
 /* Veritas image styling */
 .hero-image {
   display: block;
-  margin: 30px auto 20px auto; /* extra space between text and image */
+  margin: 30px auto 40px auto; /* Increased space below image */
   width: 240px;
-  max-width: 90%;
-  height: auto;
+  height: 240px; /* Perfectly fills box */
+  object-fit: cover;
   border-radius: 14px;
   box-shadow: 0 0 20px #00BFFF;
 }
@@ -55,16 +55,16 @@ nav a:hover {
 .cta {
   background-color: #1E90FF;
   color: white;
-  padding: 16px 36px; /* larger button */
+  padding: 16px 36px;
   font-size: 1.1rem;
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .veritas-circuit h2 {
-  font-size: 2.6rem; /* slightly larger */
+  font-size: 2.6rem;
   margin-top: 60px;
 }
 
