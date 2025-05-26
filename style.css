@@ -137,18 +137,22 @@ nav a:hover {
   font-size: 1rem;
 }
 
-/* Terms checkbox layout */
 .terms-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 8px;
-  margin-top: 10px;
   font-size: 0.9rem;
+  margin-top: 12px;
+}
+
+.terms-wrapper label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: white;
 }
 
 .terms-wrapper input[type="checkbox"] {
-  transform: scale(1.2);
+  transform: scale(1.1);
   margin: 0;
 }
 
