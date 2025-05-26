@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Veritas - AI Law Solutions</title>
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="veritas-style.css" />
 </head>
 <body>
   <header>
@@ -15,18 +16,22 @@
       <a href="login.html">Sign Up / Log In</a>
     </nav>
   </header>
-  <section class="veritas-ui">
-    <h2>All-in-One Legal Intelligence</h2>
-    <div class="mode-switcher">
-      <button>Strategy</button>
+
+  <section class="veritas-container">
+    <h1>VERITAS</h1>
+    <h3>AI Legal Drafting Assistant</h3>
+
+    <div class="tab-bar">
+      <button class="active">Document Upload</button>
       <button>Drafting</button>
-      <button>CiteSure</button>
-      <button>Legal Research</button>
-      <button>Tools</button>
-      <button>Team Mode</button>
+      <button>Legal Strategist</button>
+      <button>Strategy Report</button>
     </div>
-    <div class="ai-output">
-      <p>This is where Veritas will respond with strategic, drafted, or research-based legal intelligence.</p>
+
+    <div class="chat-panel">
+      <div class="chat-icon">💬</div>
+      <p class="chat-prompt">How can I assist you today?</p>
+      <button class="send-btn">Send</button>
     </div>
   </section>
 </body>
