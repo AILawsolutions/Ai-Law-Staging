@@ -1,67 +1,61 @@
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Orbitron', sans-serif;
   background-color: #0a0f1c;
   color: #ffffff;
 }
 header {
+  background-color: #111a2f;
+  padding: 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #111a2f;
-  padding: 20px 40px;
 }
 .logo {
   font-size: 1.8rem;
+  font-weight: 800;
   color: #66ccff;
-  font-weight: bold;
 }
 nav a {
   margin-left: 25px;
-  text-decoration: none;
   color: #ffffff;
+  text-decoration: none;
   font-weight: 600;
 }
 .hero {
+  background: url('circuit-bg.jpg') no-repeat center center;
+  background-size: cover;
   text-align: center;
-  padding: 100px 20px;
-  background: linear-gradient(145deg, #0a0f1c 0%, #111a2f 100%);
+  padding: 120px 20px;
 }
-.hero h1 {
-  font-size: 3rem;
+.overlay {
+  background: rgba(10, 15, 28, 0.85);
+  padding: 60px 20px;
+  border-radius: 12px;
+  display: inline-block;
+}
+.hero-content h1 {
+  font-size: 3.5rem;
   color: #66ccff;
+  margin-bottom: 10px;
 }
-.hero p {
+.hero-content p {
   font-size: 1.2rem;
   color: #cccccc;
+  margin-bottom: 20px;
 }
 .cta {
-  margin-top: 30px;
-  display: inline-block;
-  background: #66ccff;
+  padding: 12px 30px;
+  background-color: #66ccff;
   color: #0a0f1c;
-  padding: 12px 24px;
-  text-decoration: none;
-  border-radius: 8px;
   font-weight: bold;
-}
-.veritas-ui {
-  padding: 60px 20px;
-  text-align: center;
-}
-.mode-switcher button {
-  margin: 10px;
-  padding: 12px 20px;
-  background: #1c2a40;
-  color: #ffffff;
-  border: none;
   border-radius: 6px;
-  font-weight: 600;
-  cursor: pointer;
+  text-decoration: none;
 }
-.ai-output {
+.veritas-image {
   margin-top: 40px;
-  padding: 20px;
-  background: #131c2b;
-  border-radius: 10px;
+  width: 320px;
+  max-width: 90%;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #66ccff;
 }
