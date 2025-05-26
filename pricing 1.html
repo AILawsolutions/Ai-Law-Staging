@@ -16,11 +16,32 @@
 
     header {
       background-color: #010B15;
-      padding: 25px 0;
+      padding: 25px 0 10px;
+      border-bottom: 1px solid #1a1a1a;
+    }
+
+    .logo {
       font-size: 2rem;
       font-weight: bold;
       color: #00BFFF;
-      border-bottom: 1px solid #1a1a1a;
+      margin-bottom: 10px;
+    }
+
+    .nav-link {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #00BFFF;
+      color: #000;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-link:hover {
+      background-color: #1E90FF;
     }
 
     .pricing-container {
@@ -103,7 +124,10 @@
 </head>
 <body>
 
-<header>AI Law Solutions Pricing</header>
+<header>
+  <div class="logo">AI Law Solutions</div>
+  <a class="nav-link" href="index.html">Home</a>
+</header>
 
 <div class="pricing-container">
   <div class="card">
@@ -147,9 +171,6 @@
 <div class="footer">
   All access requires a paid subscription or promo code. For help, email <a href="mailto:ailawsolutions@gmail.com">ailawsolutions@gmail.com</a>.
 </div>
-
-</body>
-</html>
 
 </body>
 </html>
