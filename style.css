@@ -5,7 +5,7 @@ body {
   color: #ffffff;
 }
 header {
-  background-color: #111a2f;
+  background-color: #0a0f1c;
   padding: 20px 40px;
   display: flex;
   justify-content: space-between;
@@ -23,24 +23,25 @@ nav a {
   font-weight: 600;
 }
 .hero {
-  background: url('circuit-bg.jpg') no-repeat center center;
+  position: relative;
+  background: url('circuit-background.jpg') no-repeat center center;
   background-size: cover;
   text-align: center;
   padding: 120px 20px;
 }
-.overlay {
+.hero-overlay {
   background: rgba(10, 15, 28, 0.85);
-  padding: 60px 20px;
-  border-radius: 12px;
   display: inline-block;
+  padding: 40px;
+  border-radius: 12px;
 }
-.hero-content h1 {
-  font-size: 3.5rem;
+.hero h1 {
+  font-size: 4rem;
   color: #66ccff;
   margin-bottom: 10px;
 }
-.hero-content p {
-  font-size: 1.2rem;
+.hero p {
+  font-size: 1.3rem;
   color: #cccccc;
   margin-bottom: 20px;
 }
@@ -52,10 +53,10 @@ nav a {
   border-radius: 6px;
   text-decoration: none;
 }
-.veritas-image {
-  margin-top: 40px;
-  width: 320px;
+.veritas-card {
+  margin-top: 50px;
+  width: 340px;
   max-width: 90%;
-  border-radius: 12px;
+  border-radius: 16px;
   box-shadow: 0 0 20px #66ccff;
 }
