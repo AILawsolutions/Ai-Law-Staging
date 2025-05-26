@@ -16,7 +16,7 @@ header {
 
 .logo {
   color: #00BFFF;
-  font-size: 1.6rem;
+  font-size: 1.8rem; /* was 1.6rem */
   font-weight: bold;
 }
 
@@ -24,6 +24,7 @@ nav a {
   color: white;
   text-decoration: none;
   margin-left: 25px;
+  font-size: 1.1rem; /* increased size */
 }
 
 nav a:hover {
@@ -31,19 +32,19 @@ nav a:hover {
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 3.2rem; /* was 3rem */
   margin-top: 40px;
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1.4rem; /* was 1.2rem */
   margin: 20px 0;
 }
 
-/* NEW: Image sizing fix */
+/* Veritas image styling */
 .hero-image {
   display: block;
-  margin: 20px auto;
+  margin: 30px auto 20px auto; /* extra space between text and image */
   width: 240px;
   max-width: 90%;
   height: auto;
@@ -54,13 +55,16 @@ nav a:hover {
 .cta {
   background-color: #1E90FF;
   color: white;
-  padding: 12px 30px;
+  padding: 16px 36px; /* larger button */
+  font-size: 1.1rem;
   border-radius: 8px;
   text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
 }
 
 .veritas-circuit h2 {
-  font-size: 2.4rem;
+  font-size: 2.6rem; /* slightly larger */
   margin-top: 60px;
 }
 
@@ -79,13 +83,13 @@ nav a:hover {
 }
 
 .veritas-container h1 {
-  font-size: 3rem;
+  font-size: 3.2rem;
   color: #00AEEF;
   margin-top: 40px;
 }
 
 .veritas-container h3 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #ffffff;
 }
 
@@ -103,6 +107,7 @@ nav a:hover {
   padding: 10px 20px;
   border-radius: 6px;
   border: none;
+  font-size: 1rem;
 }
 
 .tab-bar .active {
@@ -118,15 +123,16 @@ nav a:hover {
 }
 
 .chat-icon {
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 
 .send-btn {
   margin-top: 20px;
-  padding: 12px 24px;
+  padding: 14px 26px;
   background-color: #00BFFF;
   color: white;
   border: none;
   border-radius: 6px;
   font-weight: bold;
+  font-size: 1rem;
 }
