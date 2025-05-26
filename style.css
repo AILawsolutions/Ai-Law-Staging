@@ -44,12 +44,12 @@ nav a:hover {
 /* Veritas image styling */
 .hero-image {
   display: block;
-  margin: 30px auto 40px auto; /* Increased space below image */
-  width: 240px;
-  height: 240px; /* Perfectly fills box */
-  object-fit: cover;
+  margin: 30px auto 30px auto; /* Adds more space below */
+  width: 320px;                /* Increase width */
+  max-width: 95%;
+  height: auto;
   border-radius: 14px;
-  box-shadow: 0 0 20px #00BFFF;
+  box-shadow: 0 0 25px #00BFFF;
 }
 
 .cta {
