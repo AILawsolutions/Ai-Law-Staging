@@ -44,8 +44,8 @@ nav a:hover {
 /* Veritas image styling */
 .hero-image {
   display: block;
-  margin: 30px auto 30px auto; /* Adds more space below */
-  width: 320px;                /* Increase width */
+  margin: 30px auto 30px auto;
+  width: 320px;
   max-width: 95%;
   height: auto;
   border-radius: 14px;
@@ -135,4 +135,28 @@ nav a:hover {
   border-radius: 6px;
   font-weight: bold;
   font-size: 1rem;
+}
+
+/* Terms checkbox layout */
+.terms-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.terms-wrapper input[type="checkbox"] {
+  transform: scale(1.2);
+  margin: 0;
+}
+
+.terms-wrapper a {
+  color: #00BFFF;
+  text-decoration: none;
+}
+
+.terms-wrapper a:hover {
+  text-decoration: underline;
 }
