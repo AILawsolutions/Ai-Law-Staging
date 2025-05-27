@@ -169,3 +169,17 @@ nav a:hover {
   box-shadow: 0 0 10px #00BFFF;
   font-size: 1.8rem;
 }
+.how-it-works-btn {
+  background-color: #00BFFF;
+  color: white;
+  padding: 14px 36px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.how-it-works-btn:hover {
+  background-color: #1E90FF;
+}
