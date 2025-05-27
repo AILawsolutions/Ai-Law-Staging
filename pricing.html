@@ -140,33 +140,33 @@
         <button>Select Plan</button>
       </a>
     </div>
-   </div> <!-- end of pricing-container -->
+  </div> <!-- pricing-container -->
 
-  <!-- How It Works Button -->
-  <div style="margin-top: 50px;">
-    <button onclick="toggleHowItWorks()" class="how-it-works-btn">How It Works</button>
-  </div>
+<!-- How It Works Button -->
+<div style="text-align: center;">
+  <button onclick="toggleHowItWorks()" class="how-it-works-btn">How It Works</button>
+</div>
 
-  <!-- How It Works Content -->
-  <div id="howItWorksContent" style="display: none; margin-top: 30px; text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;">
-    <p><strong>Step 1 – Purchase a Plan:</strong><br>
-    Choose your preferred subscription tier and click “Select Plan.” You’ll be redirected to a secure Stripe checkout.</p>
-    
-    <p><strong>Step 2 – Receive Your Promo Code:</strong><br>
-    After payment, you’ll automatically receive a unique promo code based on your selected tier (e.g., 10 users, 25 users, etc.).</p>
-    
-    <p><strong>Step 3 – Share the Code:</strong><br>
-    Distribute the code to your team. Each team member can sign up and redeem it for full access — no extra billing required for them.</p>
-    
-    <p><strong>Step 4 – Monitor Usage:</strong><br>
-    Admins will soon have access to a usage dashboard to track redemptions and manage access.</p>
-  </div>
+<!-- How It Works Explanation -->
+<div id="howItWorksContent">
+  <p><strong>Step 1 – Purchase a Plan:</strong><br>
+  Choose your preferred subscription tier and click “Select Plan.” You’ll be redirected to a secure Stripe checkout.</p>
 
-  <script>
-    function toggleHowItWorks() {
-      const content = document.getElementById("howItWorksContent");
-      content.style.display = content.style.display === "none" ? "block" : "none";
-    }
-  </script>
+  <p><strong>Step 2 – Receive Your Promo Code:</strong><br>
+  After payment, you’ll automatically receive a unique promo code based on your selected tier (e.g., 10 users, 25 users, etc.).</p>
+
+  <p><strong>Step 3 – Share the Code:</strong><br>
+  Distribute the code to your team. Each team member can sign up and redeem it for full access — no extra billing required for them.</p>
+
+  <p><strong>Step 4 – Monitor Usage:</strong><br>
+  Admins will soon have access to a usage dashboard to track redemptions and manage access.</p>
+</div>
+
+<script>
+  function toggleHowItWorks() {
+    const section = document.getElementById("howItWorksContent");
+    section.style.display = section.style.display === "block" ? "none" : "block";
+  }
+</script>
 </body>
 </html>
