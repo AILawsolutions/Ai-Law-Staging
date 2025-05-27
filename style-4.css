@@ -44,9 +44,9 @@ nav a:hover {
 /* Veritas image styling */
 .hero-image {
   display: block;
-  margin: 30px auto 30px auto;
-  width: 320px;
-  max-width: 95%;
+  margin: 30px auto;
+  width: 220px; /* reduce this from current 320px or larger */
+  max-width: 90%;
   height: auto;
   border-radius: 14px;
   box-shadow: 0 0 25px #00BFFF;
