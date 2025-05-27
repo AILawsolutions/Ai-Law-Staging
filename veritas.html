@@ -1,7 +1,8 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Veritas - AI Law Solutions</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
@@ -20,16 +21,39 @@
     <h1>VERITAS</h1>
     <h3>AI LEGAL DRAFTING ASSISTANT</h3>
     <div class="tab-bar">
-      <button class="active">Document Upload</button>
-      <button>Drafting</button>
-      <button>Legal Strategist</button>
-      <button>Strategy Report</button>
+      <button class="active" onclick="switchTab('upload')">Document Upload</button>
+      <button onclick="switchTab('drafting')">Drafting</button>
+      <button onclick="switchTab('strategist')">Legal Strategist</button>
+      <button onclick="switchTab('report')">Strategy Report</button>
     </div>
-    <div class="chat-panel">
-      <div class="chat-icon">💬</div>
-      <p class="chat-prompt">How can I assist you today?</p>
-      <button class="send-btn">Send</button>
+    <div id="tab-content">
+      <div class="chat-panel">
+        <div class="chat-icon">💬</div>
+        <textarea placeholder="How can I assist you today?" class="chat-input"></textarea>
+        <div class="chat-actions">
+          <button class="plus-btn">+</button>
+          <input type="file" accept=".pdf,.doc,.docx,image/*" class="file-upload" />
+          <button class="send-btn">Send</button>
+        </div>
+      </div>
     </div>
   </section>
+  <script>
+    function switchTab(tab) {
+      document.querySelectorAll(".tab-bar button").forEach(btn => btn.classList.remove("active"));
+      event.target.classList.add("active");
+      document.getElementById("tab-content").innerHTML = `
+        <div class="chat-panel">
+          <div class="chat-icon">💬</div>
+          <textarea placeholder="How can I assist you today?" class="chat-input"></textarea>
+          <div class="chat-actions">
+            <button class="plus-btn">+</button>
+            <input type="file" accept=".pdf,.doc,.docx,image/*" class="file-upload" />
+            <button class="send-btn">Send</button>
+          </div>
+        </div>
+      `;
+    }
+  </script>
 </body>
 </html>
