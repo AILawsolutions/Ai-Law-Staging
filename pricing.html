@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,6 +13,27 @@
       margin: 0;
       padding: 20px;
       text-align: center;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #010B15;
+    }
+    .logo {
+      color: #00BFFF;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 1.1rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     h1 {
       color: #00BFFF;
@@ -69,6 +89,14 @@
   </style>
 </head>
 <body>
+  <header>
+    <div class="logo">AI Law Solutions</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="login_checkbox_fixed.html">Sign Up/Login</a>
+    </nav>
+  </header>
   <h1>Firm Advantage Pricing</h1>
   <div class="subheadline">Tailored rates for modern law firms leveraging AI transformation</div>
   <div class="pricing-container">
