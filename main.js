@@ -1,1 +1,2 @@
-// Veritas Final JS Placeholder
+
+console.log('VERITAS is ready.');
