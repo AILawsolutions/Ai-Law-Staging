@@ -1,185 +1,59 @@
+
 body {
   margin: 0;
   font-family: 'Orbitron', sans-serif;
-  background-color: #010B15;
+  background: #010B15;
   color: white;
   text-align: center;
 }
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  background-color: #010B15;
+.main-title {
+  font-size: 3rem;
+  background: linear-gradient(to right, #00BFFF, #00AEEF);
+  -webkit-background-clip: text;
+  color: transparent;
 }
-.logo {
-  color: #00BFFF;
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-nav a {
+.subtitle {
+  font-size: 1rem;
   color: white;
-  text-decoration: none;
-  margin-left: 25px;
-  font-size: 1.1rem;
 }
-nav a:hover {
-  text-decoration: underline;
-}
-.veritas-container h1 {
-  font-size: 3.2rem;
-  color: #00AEEF;
-  margin-top: 40px;
-}
-.veritas-container h3 {
-  font-size: 1.4rem;
-  color: #ffffff;
-}
-.tab-bar {
+.nav-tabs {
   display: flex;
   justify-content: center;
-  gap: 16px;
-  margin: 20px auto;
-  flex-wrap: wrap;
-}
-.tab-bar button {
-  background-color: #1a273d;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 6px;
-  border: none;
-  font-size: 1rem;
-}
-.tab-bar .active {
-  background-color: #00AEEF;
-}
-.chat-panel {
-  margin: 30px auto;
-  background-color: #111a2f;
-  padding: 30px;
-  max-width: 600px;
-  border-radius: 12px;
-}
-.chat-icon {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-.chat-input {
-  width: 100%;
-  height: 120px;
-  font-family: 'Orbitron', sans-serif;
+  background: #111;
   padding: 10px;
-  border-radius: 8px;
-  border: none;
-  font-size: 1rem;
-  background-color: #0a0f1c;
+}
+.tab {
+  margin: 0 15px;
+  padding: 8px 12px;
   color: white;
-  box-shadow: inset 0 0 10px #00BFFF;
-}
-.chat-actions {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin-top: 15px;
-}
-.file-label {
-  position: relative;
+  background: none;
+  border: none;
   cursor: pointer;
 }
-.plus-btn {
-  background-color: #333;
-  color: #00BFFF;
-  font-size: 1.5rem;
-  border: none;
-  border-radius: 8px;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.tab.active {
+  border-bottom: 2px solid #00BFFF;
+  text-shadow: 0 0 5px #00BFFF;
 }
-.file-upload {
-  position: absolute;
-  opacity: 0;
-  width: 40px;
-  height: 40px;
-  top: 0;
-  left: 0;
-  cursor: pointer;
+.tool-dropdown ul {
+  list-style: none;
+  padding: 0;
 }
-.send-btn {
-  padding: 12px 24px;
-  background-color: #00BFFF;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-weight: bold;
-  font-size: 1rem;
+.tool-dropdown li {
+  margin: 8px 0;
 }
-.hero h1 {
-  font-size: 3.2rem;
-  margin-top: 40px;
-}
-
-.hero p {
-  font-size: 1.4rem;
-  margin: 20px 0;
-}
-
-.hero-image {
-  display: block;
-  margin: 30px auto;
-  width: 240px;
-  max-width: 90%;
-  height: auto;
-  border-radius: 14px;
-  box-shadow: 0 0 20px #00BFFF;
-}
-
-.cta {
-  background-color: #1E90FF;
-  color: white;
-  padding: 14px 30px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
+.chat-box {
   margin-top: 30px;
-  display: inline-block;
-  font-size: 1.1rem;
 }
-
-.veritas-circuit h2 {
-  font-size: 2.4rem;
-  margin-top: 60px;
-  color: #00AEEF;
+.chat-controls {
+  margin-top: 10px;
 }
-
-.circuit-icons {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  margin: 30px 0;
-}
-
-.icon {
-  background-color: #0a0f1c;
-  padding: 20px;
-  border-radius: 50%;
-  box-shadow: 0 0 10px #00BFFF;
-  font-size: 1.8rem;
-}
-.how-it-works-btn {
-  background-color: #00BFFF;
+.upload-button,
+.send-button {
+  background: #00BFFF;
   color: white;
-  padding: 14px 36px;
+  padding: 10px;
+  margin: 5px;
   border: none;
-  border-radius: 8px;
-  font-size: 1.1rem;
-  font-weight: bold;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.how-it-works-btn:hover {
-  background-color: #1E90FF;
 }
