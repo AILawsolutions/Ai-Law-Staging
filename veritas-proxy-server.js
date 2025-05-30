@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 // Replace this with your actual OpenAI API key
-const OPENAI_API_KEY = "YOUR_OPENAI_API_KEY_HERE";
+const OPENAI_API_KEY = "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";
 
 app.post("/proxy", async (req, res) => {
   const { input, tool } = req.body;
