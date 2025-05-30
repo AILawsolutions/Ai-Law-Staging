@@ -1,17 +1,2 @@
-
-export default async function handler(req, res) {
-  if (req.method === "POST") {
-    const response = await fetch("https://api.openai.com/v1/chat/completions", {
-      method: "POST",
-      headers: {
-        "Authorization": `Bearer ${process.env.OPENAI_API_KEY}`,
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(req.body)
-    });
-    const data = await response.json();
-    res.status(200).json(data);
-  } else {
-    res.status(405).end();
-  }
-}
+// proxy.js (Node.js or replace with your actual backend)
+const OPENAI_API_KEY = "YOUR_API_KEY_HERE"; // Replace this
